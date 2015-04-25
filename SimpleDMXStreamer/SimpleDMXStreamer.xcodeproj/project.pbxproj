@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB543C211AEBF45E000D3E9A /* DMXController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB543C201AEBF45E000D3E9A /* DMXController.swift */; };
 		ABF4A6CE1AEBC85C00AA44D9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4A6CD1AEBC85C00AA44D9 /* main.swift */; };
 		ABF4A6DA1AEBCF3A00AA44D9 /* DMXStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4A6D91AEBCF3A00AA44D9 /* DMXStreamer.swift */; };
 		ABF4A6DC1AEBD0DF00AA44D9 /* libUsbIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF4A6DB1AEBD0DF00AA44D9 /* libUsbIO.a */; };
@@ -25,12 +26,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB543C201AEBF45E000D3E9A /* DMXController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMXController.swift; sourceTree = "<group>"; };
 		ABF4A6CA1AEBC85C00AA44D9 /* SimpleDMXStreamer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SimpleDMXStreamer; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF4A6CD1AEBC85C00AA44D9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		ABF4A6D81AEBCBF800AA44D9 /* UsbIO-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UsbIO-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABF4A6D91AEBCF3A00AA44D9 /* DMXStreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMXStreamer.swift; sourceTree = "<group>"; };
-		ABF4A6DB1AEBD0DF00AA44D9 /* libUsbIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUsbIO.a; path = "../../../Downloads/sj/ShowJockey V1.0.0-20130629/ShowJockey V1.0.0/Lib/32bit/libUsbIO.a"; sourceTree = "<group>"; };
-		ABF4A6DD1AEBD0EB00AA44D9 /* UsbIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsbIO.h; path = "../../../Downloads/sj/ShowJockey V1.0.0-20130629/ShowJockey V1.0.0/Lib/32bit/UsbIO.h"; sourceTree = "<group>"; };
+		ABF4A6DB1AEBD0DF00AA44D9 /* libUsbIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUsbIO.a; path = "../../../../Downloads/sj/ShowJockey V1.0.0-20130629/ShowJockey V1.0.0/Lib/64bit/libUsbIO.a"; sourceTree = "<group>"; };
+		ABF4A6DD1AEBD0EB00AA44D9 /* UsbIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsbIO.h; path = "../../../../Downloads/sj/ShowJockey V1.0.0-20130629/ShowJockey V1.0.0/Lib/64bit/UsbIO.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				ABF4A6CD1AEBC85C00AA44D9 /* main.swift */,
 				ABF4A6D91AEBCF3A00AA44D9 /* DMXStreamer.swift */,
 				ABF4A6D81AEBCBF800AA44D9 /* UsbIO-Bridging-Header.h */,
+				AB543C201AEBF45E000D3E9A /* DMXController.swift */,
 			);
 			path = SimpleDMXStreamer;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				ABF4A6DA1AEBCF3A00AA44D9 /* DMXStreamer.swift in Sources */,
 				ABF4A6CE1AEBC85C00AA44D9 /* main.swift in Sources */,
+				AB543C211AEBF45E000D3E9A /* DMXController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +238,7 @@
 					V1.0.0/Lib/32bit,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cansik/Projects/SimpleDMXStreamer/SimpleDMXStreamer/UsbIO-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cansik/Projects/SimpleShowJockeyDMXStreamer/SimpleDMXStreamer/SimpleDMXStreamer/UsbIO-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -249,7 +253,7 @@
 					V1.0.0/Lib/32bit,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cansik/Projects/SimpleDMXStreamer/SimpleDMXStreamer/UsbIO-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cansik/Projects/SimpleShowJockeyDMXStreamer/SimpleDMXStreamer/SimpleDMXStreamer/UsbIO-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -272,6 +276,7 @@
 				ABF4A6D31AEBC85C00AA44D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
