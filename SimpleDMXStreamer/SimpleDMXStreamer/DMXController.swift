@@ -12,12 +12,10 @@ class DMXController
 {
     let io : UsbIO = UsbIO();
     let bufferSize : Int = 512
-    var currentDevice : showJockeyDevice;
-    var deviceId = 0;
+    var currentDevice : showJockeyDevice!;
     
     init()
     {
-        UsbIO.initialize();
         currentDevice = showJockeyDevice();
     }
     
@@ -35,29 +33,7 @@ class DMXController
         
         currentDevice = io.getShowJockeyDevice(deviceId);
         var openResult = io.openShowJockeyDevice(currentDevice);
-        return true;
-    }
-    
-    func selectDevice(deviceId:UInt8)
-    {
-        io.scanShowJockeyDevices();
-        var deviceCount = io.getShowJockeyDeviceCount();
-        
-        println("Count: \(deviceCount)");
-        
-        
-        currentDevice = io.getShowJockeyDevice(deviceId);
-        var mode = io.getShowJockeyDeviceMode(currentDevice);
-        println("Mode: \(mode)");
-    }
-    
-    func sendDMXDataTest(data:[UInt8]) -> Bool
-    {
-        let pbuffer = UnsafeMutablePointer<UInt8>.alloc(bufferSize)
-        pbuffer.initialize(data[0]);
-        
-        var result = io.sendShowJockeyDeviceBuf(io.getShowJockeyDevice(0)!, andBuffer : pbuffer, andSize : 512);
-        return result == 0;
+        return openResult;
     }
     
     func closeDevice() -> Bool
@@ -66,19 +42,17 @@ class DMXController
         return result;
     }
     
-    func sendAndGetDMXData(data:[UInt8]) -> Bool
+    func sendAndGetDMXData(dmxData:[UInt8]) -> Bool
     {
-        var result = sendDMXData(data);
+        var result = sendDMXData(dmxData);
         getDMXData();
         return result;
     }
     
-    func sendDMXData(data:[UInt8]) -> Bool
+    func sendDMXData(dmxData:[UInt8]) -> Bool
     {
-        let pbuffer = UnsafeMutablePointer<UInt8>.alloc(bufferSize)
-        pbuffer.initialize(data[0]);
-        
-        var result = io.sendShowJockeyDeviceBuf(currentDevice, andBuffer : pbuffer, andSize : 512);
+        var buffer = dmxData;
+        var result = io.sendShowJockeyDeviceBuf(currentDevice, andBuffer : &buffer, andSize : 512);
         return result == 0;
     }
     
