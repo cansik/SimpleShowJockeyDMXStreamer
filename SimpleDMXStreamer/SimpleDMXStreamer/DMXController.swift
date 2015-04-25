@@ -13,9 +13,11 @@ class DMXController
     let io : UsbIO = UsbIO();
     let bufferSize : Int = 512
     var currentDevice : showJockeyDevice;
+    var deviceId = 0;
     
     init()
     {
+        UsbIO.initialize();
         currentDevice = showJockeyDevice();
     }
     
@@ -36,6 +38,28 @@ class DMXController
         return true;
     }
     
+    func selectDevice(deviceId:UInt8)
+    {
+        io.scanShowJockeyDevices();
+        var deviceCount = io.getShowJockeyDeviceCount();
+        
+        println("Count: \(deviceCount)");
+        
+        
+        currentDevice = io.getShowJockeyDevice(deviceId);
+        var mode = io.getShowJockeyDeviceMode(currentDevice);
+        println("Mode: \(mode)");
+    }
+    
+    func sendDMXDataTest(data:[UInt8]) -> Bool
+    {
+        let pbuffer = UnsafeMutablePointer<UInt8>.alloc(bufferSize)
+        pbuffer.initialize(data[0]);
+        
+        var result = io.sendShowJockeyDeviceBuf(io.getShowJockeyDevice(0)!, andBuffer : pbuffer, andSize : 512);
+        return result == 0;
+    }
+    
     func closeDevice() -> Bool
     {
         var result = io.closeShowJockeyDevice(currentDevice);
@@ -54,7 +78,7 @@ class DMXController
         let pbuffer = UnsafeMutablePointer<UInt8>.alloc(bufferSize)
         pbuffer.initialize(data[0]);
         
-        var result = io.sendShowJockeyDeviceBuf(currentDevice, andBuffer : pbuffer, andSize : UInt32(bufferSize));
+        var result = io.sendShowJockeyDeviceBuf(currentDevice, andBuffer : pbuffer, andSize : 512);
         return result == 0;
     }
     

@@ -10,4 +10,4 @@ import Foundation
 
 println("ShowJockey Streamer");
 var streamer = DMXStreamer();
-streamer.sampleDMXTest();
+streamer.hackDMX();
