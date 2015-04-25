@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABF4A6CE1AEBC85C00AA44D9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4A6CD1AEBC85C00AA44D9 /* main.swift */; };
+		ABF4A6DA1AEBCF3A00AA44D9 /* DMXStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4A6D91AEBCF3A00AA44D9 /* DMXStreamer.swift */; };
+		ABF4A6DC1AEBD0DF00AA44D9 /* libUsbIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF4A6DB1AEBD0DF00AA44D9 /* libUsbIO.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ABF4A6C81AEBC85C00AA44D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ABF4A6CA1AEBC85C00AA44D9 /* SimpleDMXStreamer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SimpleDMXStreamer; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF4A6CD1AEBC85C00AA44D9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		ABF4A6D81AEBCBF800AA44D9 /* UsbIO-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UsbIO-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABF4A6D91AEBCF3A00AA44D9 /* DMXStreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMXStreamer.swift; sourceTree = "<group>"; };
+		ABF4A6DB1AEBD0DF00AA44D9 /* libUsbIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUsbIO.a; path = "../../../Downloads/sj/ShowJockey V1.0.0-20130629/ShowJockey V1.0.0/Lib/32bit/libUsbIO.a"; sourceTree = "<group>"; };
+		ABF4A6DD1AEBD0EB00AA44D9 /* UsbIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsbIO.h; path = "../../../Downloads/sj/ShowJockey V1.0.0-20130629/ShowJockey V1.0.0/Lib/32bit/UsbIO.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABF4A6C71AEBC85C00AA44D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF4A6DC1AEBD0DF00AA44D9 /* libUsbIO.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABF4A6C11AEBC85C00AA44D9 = {
+			isa = PBXGroup;
+			children = (
+				ABF4A6CC1AEBC85C00AA44D9 /* SimpleDMXStreamer */,
+				ABF4A6CB1AEBC85C00AA44D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABF4A6CB1AEBC85C00AA44D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABF4A6CA1AEBC85C00AA44D9 /* SimpleDMXStreamer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABF4A6CC1AEBC85C00AA44D9 /* SimpleDMXStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				ABF4A6D41AEBC99000AA44D9 /* UsbIO */,
+				ABF4A6CD1AEBC85C00AA44D9 /* main.swift */,
+				ABF4A6D91AEBCF3A00AA44D9 /* DMXStreamer.swift */,
+				ABF4A6D81AEBCBF800AA44D9 /* UsbIO-Bridging-Header.h */,
+			);
+			path = SimpleDMXStreamer;
+			sourceTree = "<group>";
+		};
+		ABF4A6D41AEBC99000AA44D9 /* UsbIO */ = {
+			isa = PBXGroup;
+			children = (
+				ABF4A6DD1AEBD0EB00AA44D9 /* UsbIO.h */,
+				ABF4A6DB1AEBD0DF00AA44D9 /* libUsbIO.a */,
+			);
+			name = UsbIO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABF4A6C91AEBC85C00AA44D9 /* SimpleDMXStreamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF4A6D11AEBC85C00AA44D9 /* Build configuration list for PBXNativeTarget "SimpleDMXStreamer" */;
+			buildPhases = (
+				ABF4A6C61AEBC85C00AA44D9 /* Sources */,
+				ABF4A6C71AEBC85C00AA44D9 /* Frameworks */,
+				ABF4A6C81AEBC85C00AA44D9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleDMXStreamer;
+			productName = SimpleDMXStreamer;
+			productReference = ABF4A6CA1AEBC85C00AA44D9 /* SimpleDMXStreamer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABF4A6C21AEBC85C00AA44D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Florian Bruggisser";
+				TargetAttributes = {
+					ABF4A6C91AEBC85C00AA44D9 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = ABF4A6C51AEBC85C00AA44D9 /* Build configuration list for PBXProject "SimpleDMXStreamer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABF4A6C11AEBC85C00AA44D9;
+			productRefGroup = ABF4A6CB1AEBC85C00AA44D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABF4A6C91AEBC85C00AA44D9 /* SimpleDMXStreamer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABF4A6C61AEBC85C00AA44D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF4A6DA1AEBCF3A00AA44D9 /* DMXStreamer.swift in Sources */,
+				ABF4A6CE1AEBC85C00AA44D9 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABF4A6CF1AEBC85C00AA44D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABF4A6D01AEBC85C00AA44D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ABF4A6D21AEBC85C00AA44D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleDMXStreamer",
+					/Users/cansik/Downloads/sj/ShowJockey,
+					"V1.0.0-20130629/ShowJockey",
+					V1.0.0/Lib/32bit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cansik/Projects/SimpleDMXStreamer/SimpleDMXStreamer/UsbIO-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		ABF4A6D31AEBC85C00AA44D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleDMXStreamer",
+					/Users/cansik/Downloads/sj/ShowJockey,
+					"V1.0.0-20130629/ShowJockey",
+					V1.0.0/Lib/32bit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cansik/Projects/SimpleDMXStreamer/SimpleDMXStreamer/UsbIO-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABF4A6C51AEBC85C00AA44D9 /* Build configuration list for PBXProject "SimpleDMXStreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF4A6CF1AEBC85C00AA44D9 /* Debug */,
+				ABF4A6D01AEBC85C00AA44D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF4A6D11AEBC85C00AA44D9 /* Build configuration list for PBXNativeTarget "SimpleDMXStreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF4A6D21AEBC85C00AA44D9 /* Debug */,
+				ABF4A6D31AEBC85C00AA44D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABF4A6C21AEBC85C00AA44D9 /* Project object */;
+}
