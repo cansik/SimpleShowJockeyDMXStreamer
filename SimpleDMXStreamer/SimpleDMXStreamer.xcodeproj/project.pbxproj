@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AB543C211AEBF45E000D3E9A /* DMXController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB543C201AEBF45E000D3E9A /* DMXController.swift */; };
+		ABD1E70D1AEC5DF700BD0DF8 /* FixtureRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD1E70C1AEC5DF700BD0DF8 /* FixtureRGB.swift */; };
+		ABD1E70F1AEC5F0700BD0DF8 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD1E70E1AEC5F0700BD0DF8 /* Fixture.swift */; };
+		ABD1E7111AEC666700BD0DF8 /* FixtureTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD1E7101AEC666700BD0DF8 /* FixtureTable.swift */; };
 		ABF4A6CE1AEBC85C00AA44D9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4A6CD1AEBC85C00AA44D9 /* main.swift */; };
 		ABF4A6DA1AEBCF3A00AA44D9 /* DMXStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4A6D91AEBCF3A00AA44D9 /* DMXStreamer.swift */; };
 		ABF4A6DC1AEBD0DF00AA44D9 /* libUsbIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF4A6DB1AEBD0DF00AA44D9 /* libUsbIO.a */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		AB543C201AEBF45E000D3E9A /* DMXController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMXController.swift; sourceTree = "<group>"; };
+		ABD1E70C1AEC5DF700BD0DF8 /* FixtureRGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureRGB.swift; sourceTree = "<group>"; };
+		ABD1E70E1AEC5F0700BD0DF8 /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		ABD1E7101AEC666700BD0DF8 /* FixtureTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureTable.swift; sourceTree = "<group>"; };
 		ABF4A6CA1AEBC85C00AA44D9 /* SimpleDMXStreamer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SimpleDMXStreamer; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF4A6CD1AEBC85C00AA44D9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		ABF4A6D81AEBCBF800AA44D9 /* UsbIO-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UsbIO-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -47,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABD1E70B1AEC5DDE00BD0DF8 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				ABD1E70C1AEC5DF700BD0DF8 /* FixtureRGB.swift */,
+				ABD1E70E1AEC5F0700BD0DF8 /* Fixture.swift */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
 		ABF4A6C11AEBC85C00AA44D9 = {
 			isa = PBXGroup;
 			children = (
@@ -66,11 +81,13 @@
 		ABF4A6CC1AEBC85C00AA44D9 /* SimpleDMXStreamer */ = {
 			isa = PBXGroup;
 			children = (
+				ABD1E70B1AEC5DDE00BD0DF8 /* Fixtures */,
 				ABF4A6D41AEBC99000AA44D9 /* UsbIO */,
 				ABF4A6CD1AEBC85C00AA44D9 /* main.swift */,
 				ABF4A6D91AEBCF3A00AA44D9 /* DMXStreamer.swift */,
 				ABF4A6D81AEBCBF800AA44D9 /* UsbIO-Bridging-Header.h */,
 				AB543C201AEBF45E000D3E9A /* DMXController.swift */,
+				ABD1E7101AEC666700BD0DF8 /* FixtureTable.swift */,
 			);
 			path = SimpleDMXStreamer;
 			sourceTree = "<group>";
@@ -141,6 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABF4A6DA1AEBCF3A00AA44D9 /* DMXStreamer.swift in Sources */,
+				ABD1E70D1AEC5DF700BD0DF8 /* FixtureRGB.swift in Sources */,
+				ABD1E7111AEC666700BD0DF8 /* FixtureTable.swift in Sources */,
+				ABD1E70F1AEC5F0700BD0DF8 /* Fixture.swift in Sources */,
 				ABF4A6CE1AEBC85C00AA44D9 /* main.swift in Sources */,
 				AB543C211AEBF45E000D3E9A /* DMXController.swift in Sources */,
 			);

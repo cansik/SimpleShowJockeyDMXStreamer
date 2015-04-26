@@ -93,4 +93,33 @@ class DMXStreamer {
             println("device closed");
         }
     }
+    
+    func fixtureTest()
+    {
+        var c = DMXController();
+        if(c.openDevice(0))
+        {
+            println("device opened");
+            
+            var table = FixtureTable();
+            var sls144 = FixtureRGB(position: 0);
+            
+            table.fixtures.append(sls144);
+            
+            for(var i = 0; i < 5000; i++)
+            {
+                
+                if(sls144.b == 0)
+                {
+                    sls144.b = 255;
+                }
+                
+                sls144.b--;
+                c.sendDMXData(table.getDMXData());
+            }
+            c.closeDevice();
+            println("device closed");
+        }
+    }
+
 }
