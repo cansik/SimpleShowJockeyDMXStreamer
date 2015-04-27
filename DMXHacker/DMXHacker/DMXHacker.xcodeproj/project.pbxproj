@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABC023D31AEED2B300971DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC023D21AEED2B300971DF7 /* AppDelegate.swift */; };
+		ABC023D51AEED2B300971DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC023D41AEED2B300971DF7 /* ViewController.swift */; };
+		ABC023D71AEED2B300971DF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC023D61AEED2B300971DF7 /* Images.xcassets */; };
+		ABC023DA1AEED2B300971DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC023D81AEED2B300971DF7 /* Main.storyboard */; };
+		ABC023E61AEED2B300971DF7 /* DMXHackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC023E51AEED2B300971DF7 /* DMXHackerTests.swift */; };
+		ABC023F61AEED60D00971DF7 /* TSUniformGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC023F31AEED60D00971DF7 /* TSUniformGrid.m */; };
+		ABC023F71AEED60D00971DF7 /* TSUniformStack.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC023F51AEED60D00971DF7 /* TSUniformStack.m */; };
+		ABC024001AEED76200971DF7 /* ArtNetHack.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC023F91AEED76200971DF7 /* ArtNetHack.swift */; };
+		ABC024011AEED76200971DF7 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC023FB1AEED76200971DF7 /* ysocket.swift */; };
+		ABC024021AEED76200971DF7 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = ABC023FC1AEED76200971DF7 /* ytcpsocket.c */; };
+		ABC024031AEED76200971DF7 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC023FD1AEED76200971DF7 /* ytcpsocket.swift */; };
+		ABC024041AEED76200971DF7 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = ABC023FE1AEED76200971DF7 /* yudpsocket.c */; };
+		ABC024051AEED76200971DF7 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC023FF1AEED76200971DF7 /* yudpsocket.swift */; };
+		ABC024071AEED92500971DF7 /* ArtNetReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC024061AEED92500971DF7 /* ArtNetReceiver.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABC023E01AEED2B300971DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABC023C51AEED2B300971DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABC023CC1AEED2B300971DF7;
+			remoteInfo = DMXHacker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABC023CD1AEED2B300971DF7 /* DMXHacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMXHacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC023D11AEED2B300971DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC023D21AEED2B300971DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABC023D41AEED2B300971DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABC023D61AEED2B300971DF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABC023D91AEED2B300971DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABC023DF1AEED2B300971DF7 /* DMXHackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMXHackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC023E41AEED2B300971DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC023E51AEED2B300971DF7 /* DMXHackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMXHackerTests.swift; sourceTree = "<group>"; };
+		ABC023F11AEED60C00971DF7 /* DMXHacker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMXHacker-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABC023F21AEED60D00971DF7 /* TSUniformGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUniformGrid.h; sourceTree = "<group>"; };
+		ABC023F31AEED60D00971DF7 /* TSUniformGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUniformGrid.m; sourceTree = "<group>"; };
+		ABC023F41AEED60D00971DF7 /* TSUniformStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUniformStack.h; sourceTree = "<group>"; };
+		ABC023F51AEED60D00971DF7 /* TSUniformStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUniformStack.m; sourceTree = "<group>"; };
+		ABC023F91AEED76200971DF7 /* ArtNetHack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtNetHack.swift; sourceTree = "<group>"; };
+		ABC023FB1AEED76200971DF7 /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		ABC023FC1AEED76200971DF7 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		ABC023FD1AEED76200971DF7 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		ABC023FE1AEED76200971DF7 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		ABC023FF1AEED76200971DF7 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		ABC024061AEED92500971DF7 /* ArtNetReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtNetReceiver.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABC023CA1AEED2B300971DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC023DC1AEED2B300971DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABC023C41AEED2B300971DF7 = {
+			isa = PBXGroup;
+			children = (
+				ABC023CF1AEED2B300971DF7 /* DMXHacker */,
+				ABC023E21AEED2B300971DF7 /* DMXHackerTests */,
+				ABC023CE1AEED2B300971DF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABC023CE1AEED2B300971DF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABC023CD1AEED2B300971DF7 /* DMXHacker.app */,
+				ABC023DF1AEED2B300971DF7 /* DMXHackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABC023CF1AEED2B300971DF7 /* DMXHacker */ = {
+			isa = PBXGroup;
+			children = (
+				ABC023EF1AEED5EA00971DF7 /* Libs */,
+				ABC023D21AEED2B300971DF7 /* AppDelegate.swift */,
+				ABC023D41AEED2B300971DF7 /* ViewController.swift */,
+				ABC023D61AEED2B300971DF7 /* Images.xcassets */,
+				ABC023D81AEED2B300971DF7 /* Main.storyboard */,
+				ABC023D01AEED2B300971DF7 /* Supporting Files */,
+			);
+			path = DMXHacker;
+			sourceTree = "<group>";
+		};
+		ABC023D01AEED2B300971DF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABC023D11AEED2B300971DF7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABC023E21AEED2B300971DF7 /* DMXHackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABC023E51AEED2B300971DF7 /* DMXHackerTests.swift */,
+				ABC023E31AEED2B300971DF7 /* Supporting Files */,
+			);
+			path = DMXHackerTests;
+			sourceTree = "<group>";
+		};
+		ABC023E31AEED2B300971DF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABC023E41AEED2B300971DF7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABC023EF1AEED5EA00971DF7 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				ABC023F81AEED75600971DF7 /* ArtNet */,
+				ABC023F01AEED5F000971DF7 /* Grid */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		ABC023F01AEED5F000971DF7 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				ABC023F21AEED60D00971DF7 /* TSUniformGrid.h */,
+				ABC023F31AEED60D00971DF7 /* TSUniformGrid.m */,
+				ABC023F41AEED60D00971DF7 /* TSUniformStack.h */,
+				ABC023F51AEED60D00971DF7 /* TSUniformStack.m */,
+				ABC023F11AEED60C00971DF7 /* DMXHacker-Bridging-Header.h */,
+			);
+			name = Grid;
+			sourceTree = "<group>";
+		};
+		ABC023F81AEED75600971DF7 /* ArtNet */ = {
+			isa = PBXGroup;
+			children = (
+				ABC023F91AEED76200971DF7 /* ArtNetHack.swift */,
+				ABC023FA1AEED76200971DF7 /* ysocket */,
+				ABC024061AEED92500971DF7 /* ArtNetReceiver.swift */,
+			);
+			name = ArtNet;
+			sourceTree = "<group>";
+		};
+		ABC023FA1AEED76200971DF7 /* ysocket */ = {
+			isa = PBXGroup;
+			children = (
+				ABC023FB1AEED76200971DF7 /* ysocket.swift */,
+				ABC023FC1AEED76200971DF7 /* ytcpsocket.c */,
+				ABC023FD1AEED76200971DF7 /* ytcpsocket.swift */,
+				ABC023FE1AEED76200971DF7 /* yudpsocket.c */,
+				ABC023FF1AEED76200971DF7 /* yudpsocket.swift */,
+			);
+			path = ysocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABC023CC1AEED2B300971DF7 /* DMXHacker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC023E91AEED2B300971DF7 /* Build configuration list for PBXNativeTarget "DMXHacker" */;
+			buildPhases = (
+				ABC023C91AEED2B300971DF7 /* Sources */,
+				ABC023CA1AEED2B300971DF7 /* Frameworks */,
+				ABC023CB1AEED2B300971DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMXHacker;
+			productName = DMXHacker;
+			productReference = ABC023CD1AEED2B300971DF7 /* DMXHacker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABC023DE1AEED2B300971DF7 /* DMXHackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC023EC1AEED2B300971DF7 /* Build configuration list for PBXNativeTarget "DMXHackerTests" */;
+			buildPhases = (
+				ABC023DB1AEED2B300971DF7 /* Sources */,
+				ABC023DC1AEED2B300971DF7 /* Frameworks */,
+				ABC023DD1AEED2B300971DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABC023E11AEED2B300971DF7 /* PBXTargetDependency */,
+			);
+			name = DMXHackerTests;
+			productName = DMXHackerTests;
+			productReference = ABC023DF1AEED2B300971DF7 /* DMXHackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABC023C51AEED2B300971DF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Florian Bruggisser";
+				TargetAttributes = {
+					ABC023CC1AEED2B300971DF7 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					ABC023DE1AEED2B300971DF7 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = ABC023CC1AEED2B300971DF7;
+					};
+				};
+			};
+			buildConfigurationList = ABC023C81AEED2B300971DF7 /* Build configuration list for PBXProject "DMXHacker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABC023C41AEED2B300971DF7;
+			productRefGroup = ABC023CE1AEED2B300971DF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABC023CC1AEED2B300971DF7 /* DMXHacker */,
+				ABC023DE1AEED2B300971DF7 /* DMXHackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABC023CB1AEED2B300971DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC023D71AEED2B300971DF7 /* Images.xcassets in Resources */,
+				ABC023DA1AEED2B300971DF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC023DD1AEED2B300971DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABC023C91AEED2B300971DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC024011AEED76200971DF7 /* ysocket.swift in Sources */,
+				ABC024001AEED76200971DF7 /* ArtNetHack.swift in Sources */,
+				ABC023F71AEED60D00971DF7 /* TSUniformStack.m in Sources */,
+				ABC023F61AEED60D00971DF7 /* TSUniformGrid.m in Sources */,
+				ABC024031AEED76200971DF7 /* ytcpsocket.swift in Sources */,
+				ABC024071AEED92500971DF7 /* ArtNetReceiver.swift in Sources */,
+				ABC024041AEED76200971DF7 /* yudpsocket.c in Sources */,
+				ABC024051AEED76200971DF7 /* yudpsocket.swift in Sources */,
+				ABC023D51AEED2B300971DF7 /* ViewController.swift in Sources */,
+				ABC023D31AEED2B300971DF7 /* AppDelegate.swift in Sources */,
+				ABC024021AEED76200971DF7 /* ytcpsocket.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC023DB1AEED2B300971DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC023E61AEED2B300971DF7 /* DMXHackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABC023E11AEED2B300971DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABC023CC1AEED2B300971DF7 /* DMXHacker */;
+			targetProxy = ABC023E01AEED2B300971DF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABC023D81AEED2B300971DF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABC023D91AEED2B300971DF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABC023E71AEED2B300971DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABC023E81AEED2B300971DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ABC023EA1AEED2B300971DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DMXHacker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DMXHacker/DMXHacker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABC023EB1AEED2B300971DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DMXHacker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DMXHacker/DMXHacker-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		ABC023ED1AEED2B300971DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DMXHackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMXHacker.app/Contents/MacOS/DMXHacker";
+			};
+			name = Debug;
+		};
+		ABC023EE1AEED2B300971DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DMXHackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMXHacker.app/Contents/MacOS/DMXHacker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABC023C81AEED2B300971DF7 /* Build configuration list for PBXProject "DMXHacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC023E71AEED2B300971DF7 /* Debug */,
+				ABC023E81AEED2B300971DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC023E91AEED2B300971DF7 /* Build configuration list for PBXNativeTarget "DMXHacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC023EA1AEED2B300971DF7 /* Debug */,
+				ABC023EB1AEED2B300971DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ABC023EC1AEED2B300971DF7 /* Build configuration list for PBXNativeTarget "DMXHackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC023ED1AEED2B300971DF7 /* Debug */,
+				ABC023EE1AEED2B300971DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABC023C51AEED2B300971DF7 /* Project object */;
+}
