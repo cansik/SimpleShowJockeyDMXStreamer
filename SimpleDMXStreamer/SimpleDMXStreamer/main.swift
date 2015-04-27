@@ -9,5 +9,15 @@
 import Foundation
 
 println("ShowJockey Streamer");
+
+var artNet = ArtNetHack()
+artNet.start();
+
+/*
 var streamer = DMXStreamer();
 streamer.fixtureTest();
+*/
+
+getchar()
+
+println("stopped!")

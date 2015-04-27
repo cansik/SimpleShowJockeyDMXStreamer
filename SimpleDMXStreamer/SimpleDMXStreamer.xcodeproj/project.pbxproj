@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AB543C211AEBF45E000D3E9A /* DMXController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB543C201AEBF45E000D3E9A /* DMXController.swift */; };
+		AB69740B1AED31A00086809B /* ArtNetHack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69740A1AED31A00086809B /* ArtNetHack.swift */; };
+		AB6974121AED34470086809B /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69740D1AED34470086809B /* ysocket.swift */; };
+		AB6974131AED34470086809B /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = AB69740E1AED34470086809B /* ytcpsocket.c */; };
+		AB6974141AED34470086809B /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69740F1AED34470086809B /* ytcpsocket.swift */; };
+		AB6974151AED34470086809B /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = AB6974101AED34470086809B /* yudpsocket.c */; };
+		AB6974161AED34470086809B /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6974111AED34470086809B /* yudpsocket.swift */; };
 		ABD1E70D1AEC5DF700BD0DF8 /* FixtureRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD1E70C1AEC5DF700BD0DF8 /* FixtureRGB.swift */; };
 		ABD1E70F1AEC5F0700BD0DF8 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD1E70E1AEC5F0700BD0DF8 /* Fixture.swift */; };
 		ABD1E7111AEC666700BD0DF8 /* FixtureTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD1E7101AEC666700BD0DF8 /* FixtureTable.swift */; };
@@ -30,6 +36,12 @@
 
 /* Begin PBXFileReference section */
 		AB543C201AEBF45E000D3E9A /* DMXController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMXController.swift; sourceTree = "<group>"; };
+		AB69740A1AED31A00086809B /* ArtNetHack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtNetHack.swift; sourceTree = "<group>"; };
+		AB69740D1AED34470086809B /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		AB69740E1AED34470086809B /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		AB69740F1AED34470086809B /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		AB6974101AED34470086809B /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		AB6974111AED34470086809B /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
 		ABD1E70C1AEC5DF700BD0DF8 /* FixtureRGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureRGB.swift; sourceTree = "<group>"; };
 		ABD1E70E1AEC5F0700BD0DF8 /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
 		ABD1E7101AEC666700BD0DF8 /* FixtureTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureTable.swift; sourceTree = "<group>"; };
@@ -53,6 +65,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB6974091AED317C0086809B /* ArtNetHack */ = {
+			isa = PBXGroup;
+			children = (
+				AB69740C1AED34470086809B /* ysocket */,
+				AB69740A1AED31A00086809B /* ArtNetHack.swift */,
+			);
+			name = ArtNetHack;
+			sourceTree = "<group>";
+		};
+		AB69740C1AED34470086809B /* ysocket */ = {
+			isa = PBXGroup;
+			children = (
+				AB69740D1AED34470086809B /* ysocket.swift */,
+				AB69740E1AED34470086809B /* ytcpsocket.c */,
+				AB69740F1AED34470086809B /* ytcpsocket.swift */,
+				AB6974101AED34470086809B /* yudpsocket.c */,
+				AB6974111AED34470086809B /* yudpsocket.swift */,
+			);
+			path = ysocket;
+			sourceTree = "<group>";
+		};
 		ABD1E70B1AEC5DDE00BD0DF8 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +114,7 @@
 		ABF4A6CC1AEBC85C00AA44D9 /* SimpleDMXStreamer */ = {
 			isa = PBXGroup;
 			children = (
+				AB6974091AED317C0086809B /* ArtNetHack */,
 				ABD1E70B1AEC5DDE00BD0DF8 /* Fixtures */,
 				ABF4A6D41AEBC99000AA44D9 /* UsbIO */,
 				ABF4A6CD1AEBC85C00AA44D9 /* main.swift */,
@@ -158,10 +192,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABF4A6DA1AEBCF3A00AA44D9 /* DMXStreamer.swift in Sources */,
+				AB6974151AED34470086809B /* yudpsocket.c in Sources */,
 				ABD1E70D1AEC5DF700BD0DF8 /* FixtureRGB.swift in Sources */,
+				AB6974121AED34470086809B /* ysocket.swift in Sources */,
 				ABD1E7111AEC666700BD0DF8 /* FixtureTable.swift in Sources */,
+				AB6974141AED34470086809B /* ytcpsocket.swift in Sources */,
+				AB6974161AED34470086809B /* yudpsocket.swift in Sources */,
 				ABD1E70F1AEC5F0700BD0DF8 /* Fixture.swift in Sources */,
 				ABF4A6CE1AEBC85C00AA44D9 /* main.swift in Sources */,
+				AB69740B1AED31A00086809B /* ArtNetHack.swift in Sources */,
+				AB6974131AED34470086809B /* ytcpsocket.c in Sources */,
 				AB543C211AEBF45E000D3E9A /* DMXController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
