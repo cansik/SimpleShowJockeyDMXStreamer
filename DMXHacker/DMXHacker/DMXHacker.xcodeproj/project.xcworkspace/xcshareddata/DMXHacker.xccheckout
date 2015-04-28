@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C6C9EB99-D53A-4820-83CE-30D36D673715</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>DMXHacker</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A28D667AB11B5C7CA91D5A1ED4C7A49E880BF373</key>
 		<string>https://github.com/cansik/SimpleShowJockeyDMXStreamer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DMXHacker/DMXHacker/DMXHacker.xcodeproj/project.xcworkspace</string>
+	<string>DMXHacker/DMXHacker/DMXHacker.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A28D667AB11B5C7CA91D5A1ED4C7A49E880BF373</key>

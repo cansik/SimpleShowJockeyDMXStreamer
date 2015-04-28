@@ -8,19 +8,26 @@
 
 import Cocoa
 
-class ViewController: NSViewController, ArtNetReceiver {
+class ViewController: NSViewController, ArtNetReceiver, NSTableViewDataSource, NSTableViewDelegate  {
     
+    var fixtureTable = FixtureTable()
     var artnetServer : ArtNetHack!
-    var gridView = TSUniformGrid ()
     
     @IBOutlet weak var dataOutputText: NSTextField!
-    @IBOutlet weak var customGridView: NSView!
+    @IBOutlet weak var dmxTableView: NSTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         artnetServer = ArtNetHack(artNetReceiver: self)
+        
+        //add fixtures
+        var myLight = FixtureRGB(position:0)
+        myLight.name = "RGB Parser"
+        myLight.red = 255
+        
+        fixtureTable.fixtures.append(myLight)
     }
 
     override var representedObject: AnyObject? {
@@ -29,28 +36,21 @@ class ViewController: NSViewController, ArtNetReceiver {
         }
     }
     
-    
-    func initializeGridView()
-    {
-        self.view.replaceSubview(customGridView, with: gridView)
-        var buttons = [NSButton](count:512, repeatedValue:NSButton())
-        for(var i = 0; i < 512; i++)
-        {
-            buttons[i].title = "\(i)"
-        }
-        
-        gridView.addNewRowWithSubviews(buttons)
-    }
-    
     func DataReceived(dmxData:[UInt8])
     {
         //on data received
         //println("\(dmxData[0]), \(dmxData[1]), \(dmxData[2])")
-        dataOutputText.stringValue = "Data: \(dmxData[0]), \(dmxData[1]), \(dmxData[2])"
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            self.dataOutputText.stringValue = "Last Data: \(NSDate().timeIntervalSince1970)"
+            self.fixtureTable.setDMXData(dmxData)
+            self.dmxTableView.reloadDataForRowIndexes(NSIndexSet(index:0), columnIndexes: NSIndexSet(index:0))
+        }
     }
 
     @IBAction func StartDMXOutput_Clicked(sender: NSButton) {
-        initializeGridView()
+        fixtureTable.fixtures.append(FixtureRGB(position:0))
+        dmxTableView.reloadData()
     }
     
     @IBAction func StartArtNet_Clicked(sender: NSButton) {
@@ -66,5 +66,28 @@ class ViewController: NSViewController, ArtNetReceiver {
         }
     }
 
+    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+        return fixtureTable.fixtures.count
+    }
+    
+    func tableViewSelectionDidChange(notification: NSNotification) {
+        //selection changed
+        println("selection changed")
+    }
+    
+    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        var cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
+        
+        if tableColumn!.identifier == "MainInfoColumn" {
+            
+            let fixture = fixtureTable.fixtures[row]
+            
+            cellView.imageView!.image = NSImage.swatchWithColor(fixture.color.getNSColor(), size: NSSize(width: 17, height: 17))
+            cellView.textField!.stringValue = fixture.description
+            return cellView
+        }
+        
+        return cellView
+    }
 }
 

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB58F1641AEF6DCB005C244E /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58F1611AEF6DCB005C244E /* Fixture.swift */; };
+		AB58F1651AEF6DCB005C244E /* FixtureRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58F1621AEF6DCB005C244E /* FixtureRGB.swift */; };
+		AB58F1661AEF6DCB005C244E /* FixtureTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58F1631AEF6DCB005C244E /* FixtureTable.swift */; };
+		AB58F16B1AEF6E71005C244E /* DMXController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58F1681AEF6E71005C244E /* DMXController.swift */; };
+		AB58F16C1AEF6E71005C244E /* libUsbIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB58F1691AEF6E71005C244E /* libUsbIO.a */; };
+		AB58F1701AEF82BF005C244E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58F16F1AEF82BF005C244E /* Extensions.swift */; };
+		AB58F1721AEFA8F5005C244E /* FixtureColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58F1711AEFA8F5005C244E /* FixtureColor.swift */; };
 		ABC023D31AEED2B300971DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC023D21AEED2B300971DF7 /* AppDelegate.swift */; };
 		ABC023D51AEED2B300971DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC023D41AEED2B300971DF7 /* ViewController.swift */; };
 		ABC023D71AEED2B300971DF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC023D61AEED2B300971DF7 /* Images.xcassets */; };
@@ -34,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB58F1611AEF6DCB005C244E /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		AB58F1621AEF6DCB005C244E /* FixtureRGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureRGB.swift; sourceTree = "<group>"; };
+		AB58F1631AEF6DCB005C244E /* FixtureTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureTable.swift; sourceTree = "<group>"; };
+		AB58F1681AEF6E71005C244E /* DMXController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMXController.swift; sourceTree = "<group>"; };
+		AB58F1691AEF6E71005C244E /* libUsbIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUsbIO.a; sourceTree = "<group>"; };
+		AB58F16A1AEF6E71005C244E /* UsbIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsbIO.h; sourceTree = "<group>"; };
+		AB58F16F1AEF82BF005C244E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AB58F1711AEFA8F5005C244E /* FixtureColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureColor.swift; sourceTree = "<group>"; };
 		ABC023CD1AEED2B300971DF7 /* DMXHacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMXHacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC023D11AEED2B300971DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC023D21AEED2B300971DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB58F16C1AEF6E71005C244E /* libUsbIO.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +91,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB58F1601AEF6DB6005C244E /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				AB58F1611AEF6DCB005C244E /* Fixture.swift */,
+				AB58F1621AEF6DCB005C244E /* FixtureRGB.swift */,
+				AB58F1631AEF6DCB005C244E /* FixtureTable.swift */,
+				AB58F1711AEFA8F5005C244E /* FixtureColor.swift */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		AB58F1671AEF6E5F005C244E /* DMXController */ = {
+			isa = PBXGroup;
+			children = (
+				AB58F1681AEF6E71005C244E /* DMXController.swift */,
+				AB58F1691AEF6E71005C244E /* libUsbIO.a */,
+				AB58F16A1AEF6E71005C244E /* UsbIO.h */,
+			);
+			name = DMXController;
+			sourceTree = "<group>";
+		};
 		ABC023C41AEED2B300971DF7 = {
 			isa = PBXGroup;
 			children = (
@@ -96,12 +133,14 @@
 		ABC023CF1AEED2B300971DF7 /* DMXHacker */ = {
 			isa = PBXGroup;
 			children = (
+				AB58F1601AEF6DB6005C244E /* Fixtures */,
 				ABC023EF1AEED5EA00971DF7 /* Libs */,
 				ABC023D21AEED2B300971DF7 /* AppDelegate.swift */,
 				ABC023D41AEED2B300971DF7 /* ViewController.swift */,
 				ABC023D61AEED2B300971DF7 /* Images.xcassets */,
 				ABC023D81AEED2B300971DF7 /* Main.storyboard */,
 				ABC023D01AEED2B300971DF7 /* Supporting Files */,
+				AB58F16F1AEF82BF005C244E /* Extensions.swift */,
 			);
 			path = DMXHacker;
 			sourceTree = "<group>";
@@ -134,6 +173,8 @@
 		ABC023EF1AEED5EA00971DF7 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				ABC023F11AEED60C00971DF7 /* DMXHacker-Bridging-Header.h */,
+				AB58F1671AEF6E5F005C244E /* DMXController */,
 				ABC023F81AEED75600971DF7 /* ArtNet */,
 				ABC023F01AEED5F000971DF7 /* Grid */,
 			);
@@ -147,7 +188,6 @@
 				ABC023F31AEED60D00971DF7 /* TSUniformGrid.m */,
 				ABC023F41AEED60D00971DF7 /* TSUniformStack.h */,
 				ABC023F51AEED60D00971DF7 /* TSUniformStack.m */,
-				ABC023F11AEED60C00971DF7 /* DMXHacker-Bridging-Header.h */,
 			);
 			name = Grid;
 			sourceTree = "<group>";
@@ -277,13 +317,19 @@
 				ABC024001AEED76200971DF7 /* ArtNetHack.swift in Sources */,
 				ABC023F71AEED60D00971DF7 /* TSUniformStack.m in Sources */,
 				ABC023F61AEED60D00971DF7 /* TSUniformGrid.m in Sources */,
+				AB58F1661AEF6DCB005C244E /* FixtureTable.swift in Sources */,
 				ABC024031AEED76200971DF7 /* ytcpsocket.swift in Sources */,
 				ABC024071AEED92500971DF7 /* ArtNetReceiver.swift in Sources */,
 				ABC024041AEED76200971DF7 /* yudpsocket.c in Sources */,
 				ABC024051AEED76200971DF7 /* yudpsocket.swift in Sources */,
 				ABC023D51AEED2B300971DF7 /* ViewController.swift in Sources */,
 				ABC023D31AEED2B300971DF7 /* AppDelegate.swift in Sources */,
+				AB58F1701AEF82BF005C244E /* Extensions.swift in Sources */,
+				AB58F16B1AEF6E71005C244E /* DMXController.swift in Sources */,
+				AB58F1651AEF6DCB005C244E /* FixtureRGB.swift in Sources */,
+				AB58F1721AEFA8F5005C244E /* FixtureColor.swift in Sources */,
 				ABC024021AEED76200971DF7 /* ytcpsocket.c in Sources */,
+				AB58F1641AEF6DCB005C244E /* Fixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +451,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DMXHacker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DMXHacker",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DMXHacker/DMXHacker-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -419,6 +469,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DMXHacker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DMXHacker",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DMXHacker/DMXHacker-Bridging-Header.h";
 			};
@@ -479,6 +533,7 @@
 				ABC023EB1AEED2B300971DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABC023EC1AEED2B300971DF7 /* Build configuration list for PBXNativeTarget "DMXHackerTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +542,7 @@
 				ABC023EE1AEED2B300971DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -34,6 +34,7 @@ class ArtNetHack {
                 var (data,remoteip,remoteport)=self.server.recv(1024)
                 if let d=data {
                     
+                    //println("\(NSDate().timeIntervalSince1970) -> dmx: \(d.count)")
                     if(d.count == 530)
                     {
                         var dmxData = self.getDMXDataPacket(d)
@@ -43,6 +44,7 @@ class ArtNetHack {
             }
             
             self.server.close()
+            println("server closed!")
         })
     }
     
